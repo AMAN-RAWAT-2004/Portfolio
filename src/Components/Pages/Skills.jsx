@@ -93,7 +93,7 @@ const Skills = () => {
           <div className="grid grid-cols-2 md:grid-cols-5 justify-center gap-15 md:gap-25 ">
             {
               skills.map((skill,index)=>(
-                <div className='h-60  w-40 rounded-lg px-2 py-4 flex flex-col gap-2 justify-center items-center bg-gray-200' key={index}>
+                <div className='h-55  w-35 rounded-lg px-2 py-4 flex flex-col gap-2 justify-center items-center bg-gray-200' key={index}>
                   <img src={skill.image} className='mb-4 w-20 h-20' alt={skill.name} />
                   <h1 className='text-yellow-500  text-xl font-bold'>{skill.name}</h1>
                   <h1 className='text-xl text-center text-green-900 font-bold'>{skill.category}</h1>
