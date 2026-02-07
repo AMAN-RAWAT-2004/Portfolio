@@ -4,12 +4,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { gsap } from 'gsap';
 import {useGSAP} from '@gsap/react'
-import {SplitText} from 'gsap/src/SplitText';
+import {SplitText} from 'gsap/SplitText';
 gsap.registerPlugin(useGSAP,SplitText)
-import Logo from './../../assets/Logo.gif'
+
 const Navbar = () => {
   const navref=useRef(null)
   const [isOpen,setIsOpen]=useState(false)
+
   const handleToggle=()=>{
     setIsOpen(!isOpen)
 
@@ -36,13 +37,13 @@ const Navbar = () => {
    
   })
   return (
-    <nav ref={navref} className='nav md:fixed md:z-30  md:mx-20 md:mt-6 ' >
-      <div className='  flex-row md:w-full flex md:rounded-full md:px-20 justify-center gap-20 md:py-5 items-center  h-20 bg-green-900'>
-         <div className='w-60 '>
-          <h1 className="text-5xl  text-center font-bold text-yellow-500 "> Portfolio</h1>
+    <section className='' >
+    <nav ref={navref} className='nav fixed z-10 flex md:w-full md:rounded-full md:flex md:flex-row md:gap-20 flex-row items-center  md:justify-center py-4 px-6 h-20 bg-green-900' >
+         <div >
+          <h1 className="text-5xl text-center font-bold text-yellow-500 "> Portfolio</h1>
          </div>
          {/* Desktop Links */}
-      <div className="hidden md:flex md:flex-row justify-center items-center gap-5">
+      <div className="hidden md:flex  space-x-6">
         <Link to='/' className='uppercase text-sm py-4 px-6  text-white hover:text-yellow-500 hover:underline transition duration-300'>
         Home
         </Link>
@@ -60,18 +61,24 @@ const Navbar = () => {
         </Link>
         
       </div>
-      <div className='hidden w-full md:flex justify-center items-center'>
-         <Link to='/contactme' className=' text-black bg-white uppercase text-sm rounded-3xl py-3 px-5 hover:bg-transparent transition duration-300 hover:text-white border'>
-        Contact Us
-        </Link>
-      </div>
-      {/* Button for mobile menu */}
+      <div className="hidden md:flex md:w-full justify-center items-center">
+  <Link
+    to="/contactme"
+    className="text-black bg-white uppercase text-sm rounded-3xl py-3 px-5 hover:bg-transparent transition duration-300 hover:text-white border"
+  >
+    Contact Us
+  </Link>
+</div>
+      
       <button onClick={handleToggle} className='text-2xl text-white md:hidden'>
-          <GiHamburgerMenu/>
+          <GiHamburgerMenu />
       </button>
+      </nav>
+      {/* Button for mobile menu */}
       
       
-      <div onClick={handleToggle}  className={`fixed h-full bg-white sm:w-1/2 md:w-1/3 w-3/4 top-0 left-0 transform transition-transform duration-300 ${isOpen ? 'translate-x-0':'-translate-x-full'} md:hidden`}>
+      
+      <div   className={`fixed z-10  h-full bg-white sm:w-1/2 md:w-1/3 w-3/4 top-0 left-0 transform transition-transform duration-300 ${isOpen ? 'translate-x-0':'-translate-x-full'} md:hidden`}>
        <nav className=" space-y-4 px-4  pt-20 flex flex-col justify-center items-center   ">
             <Link to='/' onClick={handleToggle} className='uppercase text-lg py-4 px-6 font-semibold text-green-900 hover:text-yellow-500 hover:underline transition duration-300'>
         Home
@@ -98,10 +105,8 @@ const Navbar = () => {
           <IoCloseSharp/>
       </button>
       </div>
-        
-      </div>
-      
-    </nav>
+      </section>
+    
   )
 }
 

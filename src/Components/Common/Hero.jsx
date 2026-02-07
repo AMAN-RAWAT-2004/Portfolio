@@ -15,9 +15,9 @@ const Hero = () => {
   })
  
   return (
-    <section  className=" bg-gray-200 md:bg-white">
-      <div  className=" flex-col md:flex md:flex-row w-full md:justify-center py-10 items-center md:h-screen">
-        <div className=" flex flex-col h-full mb-10 justify-center items-center md:flex-1 ">
+    <section  className="relative z-0 bg-gray-200 px-6 py-10 md:bg-white">
+      <div  className=" flex-col md:flex md:flex-row w-full md:justify-center md:gap-40 items-center md:h-screen">
+        <div className=" flex flex-col h-full mb-10 justify-center items-center  ">
           <h3  className="nav font-semibold text-center text-2xl md:text-3xl md:text-left w-140 mb-4">
             Hello There 
           </h3>
@@ -38,7 +38,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="flex md:flex-1 justify-center md:h-full items-center">
+        <div className="flex   md:h-full items-center">
           <div ref={imageRef} className="w-70 h-70 md:w-100 md:h-100 bg-yellow-500 overflow-hidden  rounded-full ">
             <img
               src={Portfolio}
