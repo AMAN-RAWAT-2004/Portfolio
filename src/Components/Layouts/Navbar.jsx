@@ -38,7 +38,7 @@ const Navbar = () => {
   })
   return (
     <section className='' >
-    <nav ref={navref} className='nav fixed z-10 flex flex-row w-screen md:rounded-full gap-20 justify-center md:flex-row md:gap-20  items-center  md:justify-center py-4 px-6 h-20 bg-green-900' >
+    <nav ref={navref} className='nav  z-10 flex flex-row w-screen md:rounded-full gap-20 justify-center md:flex-row md:gap-20  items-center  md:justify-center py-4 px-6 h-20 bg-green-900' >
          <div >
           <h1 className="text-5xl text-center font-bold text-yellow-500 "> Portfolio</h1>
          </div>
