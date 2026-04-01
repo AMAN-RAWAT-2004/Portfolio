@@ -34,19 +34,19 @@ const Services = () => {
             <div className="flex mb-4 flex-col w-70 md:w-90 bg-gray-200 md:justify-start md:items-start p-6 rounded-2xl">
                 <div className='mb-6 bg-white w-15 h-15 rounded-full flex items-center justify-center'><FaReact className='text-4xl text-blue-400 '/></div>
                 <h1 className='text-3xl mb-4 font-bold text-green-950'>Frontend UI</h1>
-                <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio beatae.</p>
+                <p className='mb-4'>I build modern and responsive web applications using React and latest frontend technologies. My focus is on clean design, smooth user experience, and high performance.</p>
                 <h2 className="text-lg flex items-center gap-2 font-bold w-full text-green-900">Learn more<FaArrowRightLong className='text-center text-yellow-500'/></h2>
             </div>
             <div className="flex mb-4 flex-col w-70 md:w-90 bg-gray-200 md:justify-start md:items-start p-6 rounded-2xl">
                 <div className='mb-6 bg-white w-15 h-15 rounded-full flex items-center justify-center'><FaNode className='text-4xl text-green-900 '/></div>
                 <h1 className='text-3xl mb-4 font-bold text-green-950'>Backend </h1>
-                <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio beatae.</p>
+                <p className='mb-4'>I integrate REST APIs and real-time features like chat and notifications using modern tools. This ensures your app stays interactive and up-to-date.</p>
                 <h2 className="text-lg flex items-center gap-2 font-bold w-full text-green-900">Learn more<FaArrowRightLong className='text-center text-yellow-500'/></h2>
             </div>
             <div className="flex mb-4 flex-col w-70 md:w-90 bg-gray-200 md:justify-start md:items-start p-6 rounded-2xl">
                 <div className='mb-6 bg-white w-15 h-15 rounded-full flex items-center justify-center'><FaJs className='text-4xl text-yellow-500 '/></div>
                 <h1 className='text-3xl mb-4 font-bold text-green-950'>FullStack </h1>
-                <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos distinctio beatae.</p>
+                <p className='mb-4'>I develop dynamic web apps with real-time features, API integration, and efficient state management. My goal is to create fast and scalable user experiences.</p>
                 <h2 className="text-lg flex items-center gap-2 font-bold w-full text-green-900">Learn more<FaArrowRightLong className='text-center text-yellow-500'/></h2>
             </div>
         </div>

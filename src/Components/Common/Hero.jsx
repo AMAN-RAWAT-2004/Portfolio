@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Portfolio from "./../../assets/Portfolio.png";
+import Portfolio from "./../../assets/PROFILE.jpeg";
 import { gsap } from 'gsap';
 import {useGSAP} from '@gsap/react'
 gsap.registerPlugin(useGSAP)
@@ -15,7 +15,7 @@ const Hero = () => {
   })
  
   return (
-    <section  className="relative z-0 bg-gray-200 px-6 py-10 md:bg-white ">
+    <section  className="relative z-0 bg-gray-200 px-6 py-10 md:bg-white border-b ">
       <div  className=" flex-col md:flex md:flex-row w-full mt-15 md:justify-center md:gap-40 items-center md:h-screen">
         <div className=" flex flex-col h-full mb-10 justify-center items-center  ">
           <h3  className="nav font-semibold text-center text-2xl md:text-3xl md:text-left w-140 mb-4">
