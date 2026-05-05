@@ -73,7 +73,7 @@ const Navbar = () => {
         {/* 🔹 CONTACT BUTTON */}
         <div className="hidden md:flex items-center">
           <Link
-            to="/contactme"
+            to="/contact"
             className="bg-white text-black px-4 py-2 rounded-full hover:bg-transparent hover:text-white border transition"
           >
             Contact
