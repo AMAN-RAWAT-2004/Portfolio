@@ -66,11 +66,11 @@ const Projects = () => {
           >
               <h1 className="text-black font-bold text-3xl px-4 ">{project.name}</h1>
             
-            <div className="flex flex-row justify-start px-4 gap-4">
+            <div className="md:flex grid grid-cols-2 md:flex-row justify-start px-4 gap-4">
               {project.for.map((tag, index) => (
                 <div
                   key={index}
-                  className="bg-yellow-500     text-white px-2 py-1 rounded"
+                  className="bg-yellow-500 text-xs md:text-sm  text-white px-2 py-1 rounded"
                 >
                   {tag}
                 </div>
