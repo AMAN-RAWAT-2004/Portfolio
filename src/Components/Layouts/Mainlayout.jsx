@@ -1,18 +1,17 @@
-import React from 'react'
-import Navbar from '../Layouts/Navbar';
-import Footer from './../Common/Footer'
-import { Outlet } from 'react-router-dom';
+import React from "react";
+import Navbar from "../Layouts/Navbar";
+import Footer from "./../Common/Footer";
+import { Outlet } from "react-router-dom";
 const Mainlayout = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <main>
-      <Outlet/>
-
+        <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Mainlayout
+export default Mainlayout;

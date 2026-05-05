@@ -1,10 +1,11 @@
 import { BrowserRouter,Route,Routes } from "react-router-dom"
 import Home from "./Components/Pages/Home"
 import About from './Components/Pages/About'
-import ContactUs from './Components/Pages/ContactMe'
+import ContactMe from './Components/Pages/ContactMe'
 import Skills from './Components/Pages/Skills'
 import Services from "./Components/Pages/Services"
 import Mainlayout from "./Components/Layouts/Mainlayout"
+import Projects from "./Components/Pages/Projects"
 function App() {
  
 
@@ -16,7 +17,8 @@ function App() {
         <Route path='about' element={<About/>} />
         <Route path='skills' element={<Skills/>} />
         <Route path='service' element={<Services/>} />
-        <Route path='contact' element={<ContactUs/>} />
+        <Route path='projects' element={<Projects/>} />
+        <Route path='contact' element={<ContactMe/>} />
         </Route>
         
     </Routes>
