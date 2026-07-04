@@ -23,6 +23,7 @@ import Redux from "./../../assets/Redux.png";
 import Postgre from "./../../assets/Postgre.png";
 import Prisma from "./../../assets/Prisma.png";
 import Redis from "./../../assets/Redis.png";
+import NextJS from "./../../assets/nextjs.png";
 
 
 const skills = [
@@ -30,6 +31,7 @@ const skills = [
   { name: "Express", category: "Backend", image: Express },
   { name: "React", category: "Frontend", image: react },
   { name: "Node", category: "Backend", image: Node },
+  { name: "Next", category: "Full Stack", image: NextJS },
   { name: "PostgreSql", category: "Database", image: Postgre },
   { name: "Redis", category: "Database", image: Redis },
   { name: "Redux", category: "State Managment", image: Redux },

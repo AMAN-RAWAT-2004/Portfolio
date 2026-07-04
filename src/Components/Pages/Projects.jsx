@@ -3,32 +3,41 @@ import GossipGo from "./../../assets/GossipGo.png";
 import SpotifyClone from './../../assets/SpotifyClone.png'
 import Rabbit from './../../assets/Rabbit.png'
 import FrameSewa from './../../assets/FrameSewa.png'
+import Employee from './../../assets/Employee.jpg'
 import { Link, useNavigate } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    name: "1. Chat Web App (Real-Time)",
+    name: "1. Employee Managment System ",
+    url: "https://employee-hub-frontend-lime.vercel.app/",
+    for: ["Managment", "Analytics", "Full-Stack"],
+    coverImage: Employee,
+  },
+  {
+    id: 2,
+    name: "2. E-commerce Clothing Website ",
+    url: "https://rabbit-i6zh.vercel.app/",
+    for: ["E-Commerce", "PayPal Integration", "Full-Stack"],
+    coverImage: Rabbit,
+  },
+  {
+    id: 3,
+    name: "3. Chat Web App (Real-Time)",
     url: "https://gossip-go-wp7k.vercel.app/",
     for: ["Real Time", "Socket.io", "Web App"],
     coverImage: GossipGo,
   },
   {
-    id: 2,
-    name: "2. Spotify Clone",
+    id: 4,
+    name: "4. Spotify Clone",
     url: "https://gadwalify-ns8s.vercel.app/",
     for: ["Redis cache", "Backend", "Web App"],
     coverImage: SpotifyClone,
   },
-  {
-    id: 3,
-    name: "3. E-commerce Clothing Website ",
-    url: "https://rabbit-i6zh.vercel.app/",
-    for: ["E-Commerce", "PayPal Integration", "Full-Stack"],
-    coverImage: Rabbit,
-  },
+  
    {
-    id: 4,
-    name: "4. E-commerce Frame Website ",
+    id: 5,
+    name: "5. E-commerce Frame Website ",
     url: "https://magical-arithmetic-584a76.netlify.app/#",
     for: ["E-Commerce", "Web Design", "UI Design"],
     coverImage: FrameSewa,
